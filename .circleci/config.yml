@@ -14,8 +14,9 @@ jobs:
       - checkout # check out the code in the project directory
       - run: echo "Doulbe trouble" # run the `echo` command
   #run two containers boby and sally    
-  workflows:
-    version: 2
-    bobby_sally:
+workflows:
+  version: 2
+  bobby_sally:
+    jobs:
       - bobby
       - sally
