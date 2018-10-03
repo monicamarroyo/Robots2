@@ -8,12 +8,12 @@ jobs:
     steps:
       - checkout # check out the code in the project directory
       - run: echo "hello world" # run the `echo` command
-  sally: # use the docker executor type; machine and macos executors are also supported
+  sally: # use the docker executor type; machine and macos executors are also supported 
+    docker:
       - image: circleci/node:4.8.2 # the primary container, where your job's commands are run
     steps:
       - checkout # check out the code in the project directory
       - run: echo "Doulbe trouble" # run the `echo` command
-  #run two containers boby and sally    
 workflows:
   version: 2
   bobby_sally:
