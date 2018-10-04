@@ -5,6 +5,8 @@
   "homepage": "https://monicamarroyo.github.io/Robots",
   "dependencies": {
     "gh-pages": "^1.2.0",
+    "husky": "^1.1.0",
+    "pretty-quick": "^1.7.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-redux": "^5.0.7",
@@ -20,6 +22,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "precommit": "pretty-quick --staged"
+  },
+  "devDependencies": {
+    "prettier": "1.14.3"
   }
 }
