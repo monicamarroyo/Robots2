@@ -8,8 +8,6 @@ jobs:
     steps:
       - checkout # check out the code in the project directory
       - run: echo "npm installing" # run the `echo` command
-      - run: npm install
-      - run: CI=true npm run build
   sally: # use the docker executor type; machine and macos executors are also supported
     docker:
       - image: circleci/node:8.9 # the primary container, where your job's commands are run
